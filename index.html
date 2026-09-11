@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title id="page-title">flyp — Sell your home faster and for more</title>
+  <meta id="page-description" name="description" content="" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Config (must load before main.js) -->
+  <script src="config.js"></script>
+</head>
+<body class="antialiased">
+
+  <!-- Cookie Banner -->
+  <div id="cookie-banner" class="cookie-banner hidden">
+    <div class="cookie-banner__inner">
+      <p id="cookie-message" class="cookie-banner__text"></p>
+      <div class="cookie-banner__actions">
+        <button id="cookie-accept" class="btn btn--primary btn--sm">Accept</button>
+        <a id="cookie-learn-more" href="#" class="cookie-banner__link">Learn more</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <header id="main-nav" class="nav">
+    <div class="nav__container">
+      <a href="/" class="nav__logo" id="nav-logo">
+        <span class="nav__logo-icon" id="logo-icon"></span>
+        <span class="nav__logo-text" id="logo-text"></span>
+      </a>
+      <nav class="nav__menu" id="nav-menu">
+        <ul class="nav__links" id="nav-links"></ul>
+      </nav>
+      <div class="nav__actions">
+        <a href="#" class="btn btn--primary btn--sm" id="nav-cta"></a>
+        <button class="nav__hamburger" id="nav-hamburger" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero">
+    <div class="hero__bg" id="hero-bg"></div>
+    <div class="hero__content">
+      <h1 class="hero__heading" id="hero-heading"></h1>
+      <p class="hero__subheading" id="hero-subheading"></p>
+      <a href="#" class="btn btn--primary btn--lg hero__cta" id="hero-cta"></a>
+      <div class="hero__decoration hero__decoration--left">
+        <div class="flip-card flip-card--1">🏠</div>
+      </div>
+      <div class="hero__decoration hero__decoration--right">
+        <div class="flip-card flip-card--2">🏡</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured In -->
+  <section id="featured" class="featured">
+    <div class="container">
+      <p class="featured__label" id="featured-label"></p>
+      <div class="featured__logos" id="featured-logos"></div>
+    </div>
+  </section>
+
+  <!-- How It Works -->
+  <section id="how-it-works" class="how-it-works">
+    <div class="container">
+      <h2 class="section-heading" id="hiw-heading"></h2>
+      <p class="section-subtitle" id="hiw-subtitle"></p>
+      <div class="steps-grid" id="steps-grid"></div>
+      <div class="how-it-works__cta">
+        <a href="#" class="btn btn--outline btn--lg" id="hiw-cta"></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Compare Agents -->
+  <section id="compare-agents" class="compare-agents">
+    <div class="container">
+      <div class="compare-agents__content">
+        <h2 class="section-heading" id="compare-heading"></h2>
+        <p class="section-subtitle" id="compare-description"></p>
+        <a href="#" class="btn btn--primary btn--lg" id="compare-cta"></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- User Paths -->
+  <section id="user-paths" class="user-paths">
+    <div class="container">
+      <h2 class="section-heading" id="paths-heading"></h2>
+      <p class="section-subtitle" id="paths-subtitle"></p>
+      <div class="paths-grid" id="paths-grid"></div>
+    </div>
+  </section>
+
+  <!-- Property Stories -->
+  <section id="stories" class="stories">
+    <div class="container">
+      <h2 class="section-heading" id="stories-heading"></h2>
+      <p class="section-subtitle" id="stories-subtitle"></p>
+      <div class="stories__carousel" id="stories-carousel"></div>
+      <div class="stories__cta">
+        <a href="#" class="btn btn--outline btn--lg" id="stories-cta"></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats -->
+  <section id="stats" class="stats">
+    <div class="container">
+      <h2 class="section-heading section-heading--light" id="stats-heading"></h2>
+      <p class="section-subtitle section-subtitle--light" id="stats-subtitle"></p>
+      <div class="stats-grid" id="stats-grid"></div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section id="testimonials" class="testimonials">
+    <div class="container">
+      <h2 class="section-heading" id="testimonials-heading"></h2>
+      <div class="testimonials__slider" id="testimonials-slider">
+        <div class="testimonials__track" id="testimonials-track"></div>
+      </div>
+      <div class="testimonials__nav">
+        <button class="testimonials__btn testimonials__btn--prev" id="testimonial-prev">‹</button>
+        <button class="testimonials__btn testimonials__btn--next" id="testimonial-next">›</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- About / Mission -->
+  <section id="about" class="about">
+    <div class="container">
+      <p class="about__tagline" id="about-tagline"></p>
+      <h2 class="section-heading" id="about-heading"></h2>
+      <p class="about__description" id="about-description"></p>
+      <a href="#" class="btn btn--outline btn--lg" id="about-cta"></a>
+    </div>
+  </section>
+
+  <!-- Contact Form -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <div class="contact__grid">
+        <div class="contact__info">
+          <h2 class="section-heading" id="contact-heading"></h2>
+          <p class="contact__subtitle" id="contact-subtitle"></p>
+        </div>
+        <form class="contact__form" id="contact-form">
+          <div class="form-fields" id="form-fields"></div>
+          <div class="form-options" id="form-options"></div>
+          <button type="submit" class="btn btn--primary btn--lg btn--full" id="form-submit"></button>
+          <p class="form-success hidden" id="form-success"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="footer" class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div class="footer__logo" id="footer-logo"></div>
+          <p class="footer__tagline" id="footer-tagline"></p>
+          <div class="footer__social" id="footer-social"></div>
+        </div>
+        <div class="footer__links">
+          <h4 class="footer__heading">Quick Links</h4>
+          <ul class="footer__nav" id="footer-nav"></ul>
+        </div>
+        <div class="footer__links">
+          <h4 class="footer__heading">Navigation</h4>
+          <ul class="footer__nav" id="footer-site-links"></ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copyright" id="footer-copyright"></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Main JS -->
+  <script src="js/main.js"></script>
+</body>
+          </html>
